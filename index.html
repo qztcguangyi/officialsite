@@ -14,11 +14,7 @@
     <div id="app">正在跳转中，请稍等片刻</div>
     <script>
       function good(){
-        var path=window.location.pathname.replace("/officialsite","");
-        if (path == ""){
-            path = "/";
-        }
-        window.location.assign("http://47.119.145.125:8088/"+ path +window.location.search);
+        window.location.assign("http://47.119.145.125:8088/");
       }
       good();
   </script>

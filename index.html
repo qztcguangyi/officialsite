@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Happy加速器</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="pigcha,pigchaproxy">
+    <meta name="description" content="An excellent network tool">
+</head>
+
+<body>
+    <div id="app">正在跳转中，请稍等片刻</div>
+    <script>
+      function good(){
+        var path=window.location.pathname.replace("/officialsite","");
+        if (path == ""){
+            path = "/";
+        }
+        window.location.assign("http://47.119.145.125:8088/"+ path +window.location.search);
+      }
+      good();
+  </script>
+</body>
+
+</html>
